@@ -1,12 +1,12 @@
 import express from 'express';
 import { movies, movieReviews, movieDetails } from './moviesData';
 import uniqid from 'uniqid'
-app.use(express.json());
 
 const router = express.Router(); 
 router.get('/', (req, res) => {
     res.json(movies);
 });
+
 
 // Get movie details
 router.get('/:id', (req, res) => {
@@ -20,6 +20,7 @@ router.get('/:id', (req, res) => {
         });
     }
 });
+
 
 // Get movie reviews
 router.get('/:id/reviews', (req, res) => {
