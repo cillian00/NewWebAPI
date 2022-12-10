@@ -2,6 +2,9 @@ import dotenv from 'dotenv';
 import express from 'express';
 import moviesRouter from './api/movies';
 import genreRouter1 from './api/genres';
+import './db';
+import './seedData'
+
 
 
 
